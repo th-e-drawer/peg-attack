@@ -1,0 +1,128 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"source": "~/.config/fastfetch/images/wow_terminal.png",
+		"width": 38,
+		"padding": {
+			"left": 2,
+			"right": 3
+		},
+	},
+	"display": {
+		"separator": "  "
+	},
+	"modules": [
+	{
+	    "type": "custom",
+	    "format": "{#@032} "
+	},
+        {
+            "type": "custom",
+            "format": "{#@032}       _                  __ "
+	},
+        {
+            "type": "custom",
+            "format": "{#@032}      (_)____ _________ _/ / "
+	},
+        {
+            "type": "custom",
+            "format": "{#@032}     / / __  / ___/ __ `/ / " 
+	},
+	{
+	    "type": "custom",
+	    "format": "{#@032}    / / /_/ / /  / /_/ /_/  "
+	},
+	{
+	    "type": "custom",
+	    "format": "{#@032} __/ /_____/_/  /___, (_)   "
+	},
+	{
+	    "type": "custom",
+	    "format": "{#@032}/___/          /____/    " 
+	},
+		"break",
+	// There's a bunch of options for modules, including hardware info, terminal font, battery, and even music playing
+	// I had a gut feeling though that you'd prefer something more minimalistic lol
+	// Esp since cinnamon's taskbar already tells you everything (*cries in arch*)
+	// If I was wrong though, you can use "fastfetch --list-modules" to add more!
+		{
+			"type": "os",
+			"key": " ",			// Zero clue on where to find the logos, I just ripped them from other configs
+			"keyColor": "38;2;119;177;104",	// If you wanna change the colors, the last 3 numbers are simply RGB
+			"outputColor": "38;2;243;242;202"
+		},
+
+		{
+			"type": "kernel",
+			"key": " ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+		},
+		{
+			"type": "shell",
+			"key": " ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+		},
+		{
+			"type": "de",
+			"key": " ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+		},
+		{
+			"type": "wm",
+			"key": " ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+		},
+		{
+			"type": "packages",
+			"key": "󰏗 ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+		},
+		{
+			"type": "disk",
+			"key": " ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202",
+			"percent": {
+				"green": 60,		// 60% and less shows up as green
+				"yellow": 80		// 60-80% will be in yellow. Above that will be red
+			}
+		},
+		{
+			"type": "memory",
+			"key": " ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202",
+			"percent": {
+				"green": 30,		// Same thing from disk space applies here, feel free to adjust :)
+				"yellow": 70
+			}
+		},
+		{
+			"type": "uptime",
+			"key": "󰅐 ",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+		},
+		{
+    			"type": "command",
+     			"key": " ",
+			"text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+			"format": "{result}",
+			"keyColor": "38;2;119;177;104",
+			"outputColor": "38;2;243;242;202"
+    		},
+		"break",
+		{
+			"type": "custom",
+			"format": "\u001b[38m󰮯  \u001b[34m󰊠  \u001b[36m󰊠  \u001b[32m󰊠  \u001b[33m󰊠  \u001b[39m󰊠  \u001b[31m󰊠  \u001b[35m󰊠 "
+			// I lowk don't know how to change these colors I just copy pasted them from someone else's config
+			// But they should change according to your terminal's colors
+			// (Assuming you've never messed with the terminal config before, they'll just be standard rainbow)
+		}
+	]
+}
