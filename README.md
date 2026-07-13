@@ -2,6 +2,7 @@ Attack for my son <3
 
 https://artfight.net/attack/16216869.peg-attack
 
+<br>
 ## Instructions
 1. Install fastfetch, should be available on Mint
 2. After you have installed it, place the code in this file path: `~/.config/fastfetch` (you may have to make a new folder)
