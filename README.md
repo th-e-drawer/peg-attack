@@ -8,4 +8,5 @@ https://artfight.net/attack/16216869.peg-attack
 4. Replace the `source` field in the 4th line with that file path
 5. Go to your `~/.bashrc` file
 6. Add this to the very last line to make the fastfetch automatically show up every time you open the terminal: `fastfetch --logo FILE_PATH_HERE`
+
 You should be good to go! I hope!
