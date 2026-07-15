@@ -109,13 +109,13 @@
 			"outputColor": "38;2;243;242;202"
 		},
 		{
-    			"type": "command",
-     			"key": " ",
+    		"type": "command",
+     		"key": " ",
 			"text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
 			"format": "{result}",
 			"keyColor": "38;2;119;177;104",
 			"outputColor": "38;2;243;242;202"
-    		},
+    	},
 		"break",
 		{
 			"type": "custom",
